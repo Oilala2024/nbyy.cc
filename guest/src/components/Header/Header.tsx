@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router";
 import { MENUS } from "./menus";
 
-export const Header: React.FC<{}> = (props) => {
+export const Header = () => {
  return (
-  <div className="flex items-center w-full mb-6 py-4">
+  <div className="flex items-center w-full py-4 fixed top-0  backdrop-blur bg-black/60 z-[999]">
    <div className="flex items-center gap-1 ">
     <img
      src="https://www.nbyy.cc/static/mudvod/common/128-128-logo.png"

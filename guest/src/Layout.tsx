@@ -4,10 +4,14 @@ import { Header } from "./components/Header/Header";
 
 export const Layout = () => {
  return (
-  <div className="container mx-auto px-4 max-w-6xl">
-   <Header />
-   <Outlet />
+  <>
+   <div className="container mx-auto px-4 max-w-6xl">
+    <Header />
+    <div className="pt-20">
+     <Outlet />
+    </div>
+   </div>
    <Footer />
-  </div>
+  </>
  );
 };
