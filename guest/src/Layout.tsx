@@ -5,11 +5,9 @@ import { Header } from "./components/Header/Header";
 export const Layout = () => {
  return (
   <>
-   <div className="container mx-auto px-4 max-w-6xl">
-    <Header />
-    <div className="py-20">
-     <Outlet />
-    </div>
+   <Header />
+   <div className="py-20 container mx-auto px-4 max-w-6xl">
+    <Outlet />
    </div>
    <Footer />
   </>
