@@ -1,9 +1,15 @@
 import { FC } from "react";
+import { ROUTES_PATH } from "../../routes/routes.constant";
 import { MovieEntity } from "../../services/Movie/Movie.interface";
+import { ALink } from "../Link/Link";
 
 export const MovieItem: FC<{ value: MovieEntity }> = ({ value }) => {
  return (
-  <div className="flex flex-col gap-1 ">
+  <ALink
+   className="flex flex-col gap-1 "
+   to={ROUTES_PATH.DETAIL}
+   routeParams={{ id: value.id }}
+  >
    <img
     src={value.avatar}
     alt={value.name}
@@ -15,6 +21,6 @@ export const MovieItem: FC<{ value: MovieEntity }> = ({ value }) => {
    >
     {value.name}
    </span>
-  </div>
+  </ALink>
  );
 };
