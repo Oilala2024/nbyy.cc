@@ -1,17 +1,16 @@
-import { MovieItem } from "../../components/Movie/MovieItem";
+import { MovieItems } from "../../components/Movie/MovieItems";
 
 export const HomePage = () => {
  return (
-  <div className="grid grid-cols-6 gap-x-1 gap-y-4 rounded overflow-hidden ">
-   {new Array(50)
-    .fill({
-     avatar: "https://www.nbyy.cc/imgs1/330620778.jpg",
-     id: 1,
-     name: "破·地狱",
-    })
-    .map((movie, idx) => (
-     <MovieItem value={movie} key={idx} />
-    ))}
+  <div className="flex flex-col gap-12">
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
+   <MovieItems categoryId="电影" categoryName="电影" />
   </div>
  );
 };

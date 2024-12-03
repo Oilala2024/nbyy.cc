@@ -10,7 +10,7 @@ export const MovieItem: FC<{ value: MovieEntity }> = ({ value }) => {
     className="h-[220px]  w-full object-cover hover:scale-105 transition-all duration-500"
    />
    <span
-    className="text-white textuppcase font-semibold
+    className="text-white textuppcase font-semibold truncate
    "
    >
     {value.name}
