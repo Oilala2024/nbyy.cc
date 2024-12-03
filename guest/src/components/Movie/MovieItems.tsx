@@ -13,7 +13,7 @@ export const MovieItems: FC<{ categoryId: string; categoryName: string }> = ({
   <div className="flex flex-col gap-4">
    <Link
     to={`${ROUTES_PATH.CATEGORY}/${categoryId}`}
-    className="text-white flex items-end"
+    className="text-white flex items-end hover:text-primary"
    >
     <span className="text-2xl  font-bold mr-4">{categoryName}</span>
     <div className="flex items-center gap-1">
